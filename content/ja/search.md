@@ -1,4 +1,4 @@
 ---
-title: Søkeresultat
+title: 検索
 layout: search
 ---
