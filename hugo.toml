@@ -93,7 +93,7 @@ description = "Hanapediaの個人wiki"
 section = ["HTML", "print", "RSS"]
 
 [params]
-# copyright = "The Docsy Authors"
+copyright = "Hanapedia Wiki Authors"
 # privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
