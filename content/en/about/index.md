@@ -72,6 +72,9 @@ The original application was developed in a week for a Hackason and was later re
 <br>
 
 ## 2022: Diving Deeper
+As I continued my jouney in the web development, I became more and more interested in lower layers of the web.
+At the same time, I was wondering how bigger applications are developed and ran in the real world.
+That was when I started look into concepts such as Kubernetes and Microservices.
 
 <br>
 <br>
