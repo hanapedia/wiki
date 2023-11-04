@@ -31,15 +31,16 @@ Networking, Observability, Microservices
 
 
 {{% blocks/section color="primary" %}}
-# Engineering Background
+# Software Engineering Background
 ## 2019: Hello World, Hello Programming
-I encoutered programming in 2019 when I took programming course in college. Since then, I slowly became attached to programming as I started to improve.
+I encoutered programming in 2019 when I took programming course in college.
+Since then, I was entrigued by the cources in Inforamtion Science and continued to learn the basics of topics such as OS, Networking, Machine Learning/Deep Learning, Algorithm & Data Structure.
 
 <br>
 <br>
 
 ## 2021: Jumping into the world of Web
-Although I was enjoying academic programming that I learned from college course, I had always wondered where programming is used in the actual world. That was the starting point of my jouney in the web.
+Although I was enjoying academic programming used in college courses, I had always wondered where programming is used in the actual world. That was the starting point of my jouney in the web.
 
 <br>
 
@@ -57,7 +58,7 @@ Backend: Laravel
 
 <br>
 
-### December 2021, My First Team Development MShare:
+### December 2021, My First Team Development: MShare
 As a team of four, we have developed Video Sharing Web Application that provides a unique rating system. User's facial expressions when watching the video are tallied directly to the rating of the video.
 I worked on the integration of the facial expression detector on to the frontend and also the deployment of the backend to AWS services.
 
@@ -71,6 +72,11 @@ The original application was developed in a week for a Hackason and was later re
 <br>
 
 ## 2022: Diving Deeper
+
+<br>
+<br>
+
+## 2023: Starting My Career as Software Engineer
 
 {{% /blocks/section %}}
 
