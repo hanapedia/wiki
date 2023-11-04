@@ -4,88 +4,78 @@ linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About Goldydocs" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="About Me" image_anchor="bottom" height="auto" %}}
 
-A sample site using the Docsy Hugo theme.
 {.mt-5}
+Information Science Master's student in Tokyo, researching microservice and autonomous root cause analysis method.
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
 
-Goldydocs is a sample site using the [Docsy](https://github.com/google/docsy)
-Hugo theme that shows what it can do and provides you with a template site
-structure. It’s designed for you to clone and edit as much as you like. See the
-different sections of the documentation and site for more ideas.
+{{% blocks/section color="light" type="row" %}}
 
-{{% /blocks/lead %}}
-
-{{% blocks/section %}}
-
-# This is another section
-{.text-center}
-
-{{% /blocks/section %}}
-
-{{% blocks/section %}}
-
-# This is another section
-{.text-center}
-
-{{% /blocks/section %}}
-
-{{% blocks/lead color="primary" %}}
-{{% /blocks/lead %}}
-
-
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-brands fa-golang" title="Languages" %}}
+Golang, YAML, HCL, C, Python, Typescript, Rust, eBPF
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="My GitHub!" %}}
+You can find all of my projects on my [GitHub Account](https://github.com/hanapedia) !
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fa-solid fa-network-wired" title="Areas of Interest" %}}
+Networking, Observability, Microservices
 {{% /blocks/feature %}}
-
-
 {{% /blocks/section %}}
 
 
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
+{{% blocks/section color="primary" %}}
+# Engineering Background
+## 2019: Hello World, Hello Programming
+I encoutered programming in 2019 when I took programming course in college. Since then, I slowly became attached to programming as I started to improve.
+
+<br>
+<br>
+
+## 2021: Jumping into the world of Web
+Although I was enjoying academic programming that I learned from college course, I had always wondered where programming is used in the actual world. That was the starting point of my jouney in the web.
+
+<br>
+
+### August 2021, My First Major Project: [GlobeChat][]
+First, I started from Frontend and Backend development using Laravel and Vue.
+I developed a group chatting application called GlobeChat, which has 3D UI that visualize the engagement from the users in the chat room. 
+I also presented this application in a student pitch contest in Japan called Giikuten. 
+You can see the application in action in the [giikuten-slides][] that I used. 
+
+The whole application was developed and deployed in the spand of *2 months*.
+##### **Tech Stack**
+Frontend: Vue, Three.js
+
+Backend: Laravel
+
+<br>
+
+### December 2021, My First Team Development MShare:
+As a team of four, we have developed Video Sharing Web Application that provides a unique rating system. User's facial expressions when watching the video are tallied directly to the rating of the video.
+I worked on the integration of the facial expression detector on to the frontend and also the deployment of the backend to AWS services.
+
+The original application was developed in a week for a Hackason and was later refined.
+##### **Tech Stack**
+[Frontend][MShare-frontend]: Next.js, React
+
+[Backend][MShare-backend]: Next.js, AWS API Gateway, AWS Lambda
+
+<br>
+<br>
+
+## 2022: Diving Deeper
+
 {{% /blocks/section %}}
 
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
-{{% /blocks/section %}}
+[github-account]: https://github.com/hanapedia
+[GlobeChat]: https://github.com/hanapedia/globe-chat-app
+[giikuten-slides]: https://docs.google.com/presentation/d/1O3A96uDKAjjq9dh_T2dx-asjCGYGNNGcSeo_iiU4vvc/edit#slide=id.gf0c778061d_0_49
+[MShare-frontend]: https://github.com/yusukey7grizi/mshare_web_app
+[MShare-backend]: https://github.com/hanapedia/mshare_serverless_api
