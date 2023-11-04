@@ -76,10 +76,29 @@ As I continued my jouney in the web development, I became more and more interest
 At the same time, I was wondering how bigger applications are developed and ran in the real world.
 That was when I started look into concepts such as Kubernetes and Microservices.
 
+### April 2022 ~ February 2023, Senior Thesis
+
+#### Bare-metal Kubernetes Cluster
+
+#### Microservices Topology Configuration tool (prototype)
+
 <br>
 <br>
 
 ## 2023: Starting My Career as Software Engineer
+
+### February 2023, Viviane
+
+### August 2023, Cybozu
+
+### October 2023, DMM.com
+
+
+## 2023: Starting My Master's
+
+### Hexagon
+
+### Multi-node Bare-metal Kubernetes cluster operation
 
 {{% /blocks/section %}}
 
