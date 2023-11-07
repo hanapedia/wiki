@@ -67,12 +67,12 @@ weight = 1
 title = "Goldydocs"
 description = "A Docsy example site"
 
-[languages.ja]
-languageName = "日本語"
-weight = 2
-contentDir = "content/ja"
-[languages.ja.params]
-description = "Hanapediaの個人wiki"
+# [languages.ja]
+# languageName = "日本語"
+# weight = 2
+# contentDir = "content/ja"
+# [languages.ja.params]
+# description = "Hanapediaの個人wiki"
 
 [markup]
   [markup.goldmark]
