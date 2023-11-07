@@ -118,13 +118,25 @@ However, this approach had limited scalability as I had to build the docker imag
 <br>
 
 ## 2023: Starting My Career as Software Engineer
+After completing my senior thesis, I started looking for software engineering job.
 
 ### February 2023, Viviane
+First internship that I got was in a startup company named [Vivian][].
+I was employed as a fullstack developer working on frontend, backend, and infrastructure.
 
 ### August 2023, Cybozu
+Another internship that I had was with [Cybozu][], which is a company that provides a BtoB SaaS.
+I was employed for three weeks course where I worked on improving the container registy in a large-scale Kubernetes cluster.
+More specifically, I've completed the following during the internship.
+- I tested an OSS container registry named [spegel][], a new type of container registry cache that is designed to share the local cache on each node.
+- I developed a kubernetes custom controller for delaying the pod scheduling to enhance the benefit of using spegel.
+
+The work that I've dones is documented as a [blog][cybozu-blog] in Japanese.
 
 ### October 2023, DMM.com
-
+Another internship that I participated in was with [DMM.com][DMM]. I was employed for 5 weeks in a SRE team in Microservices Architect group.
+During the internship, I was assigned series of operational tasks for multi-cloud kubernetes cluster.
+More specifically, I updated version of three tools running in the cluster, fixed 4 different instances of error messages recorded by Datadog Agent, and added a new CI workflow for configuring IAM role in AWS.
 
 ## 2023: Starting My Master's
 
@@ -140,3 +152,8 @@ However, this approach had limited scalability as I had to build the docker imag
 [MShare-frontend]: https://github.com/yusukey7grizi/mshare_web_app
 [MShare-backend]: https://github.com/hanapedia/mshare_serverless_api
 [k8s-provisioner]: https://github.com/hanapedia/k8s_provisioner
+[Vivian]: https://viviane.jp/
+[Cybozu]: https://cybozu.co.jp/
+[spegel]: https://github.com/XenitAB/spegel
+[cybozu-blog]: https://blog.cybozu.io/entry/2023/09/21/161930
+[DMM]: https://dmm-corp.com/
