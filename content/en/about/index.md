@@ -139,10 +139,34 @@ During the internship, I was assigned series of operational tasks for multi-clou
 More specifically, I updated version of three tools running in the cluster, fixed 4 different instances of error messages recorded by Datadog Agent, and added a new CI workflow for configuring IAM role in AWS.
 
 ## 2023: Starting My Master's
+I started working on my master's research along side working my internships.
 
-### Hexagon
+I already had decided to continue on with my senior thesis in master's and dive further into analyzing how  different types of network communication affect the accuracy of the root cause analysis.
+For this, I had to improve the tools that I created during my senior thesis.
 
 ### Multi-node Bare-metal Kubernetes cluster operation
+As for the Ansible project for provisioning bare-metal kubernetes cluster, I had to improve it so that I can create Kubernetes cluster on top of KVMs on multiple physical machines.
+This was a needed change because I noticed that I needed more computing power for my experiments.
+
+Also, because the cluster need to run continuously, I have improved the operation of the cluster. In particular, I introduced to GitOps to manage the installations of cluster tools such as monitoring infrastructure and service mesh.
+
+- [Improved Ansible][lab-cluster].
+- [The GitOps project][lab-cluster-app].
+
+### Hexagon
+As for the microservice topology configuration tool, I had to do a major rework so that I could incorporate some degree of application logic such as how each endpoint on a microservice will invoke endpoints on other microservices.
+
+Also, I had to improve the tooling so that I can have more variation for types of communication used by the microservices.
+
+With new requirements considered, I have developed [Hexagon][], a microservice benchmark generation tool which can configure the following on each microservice.
+1. Exposed API
+    - each microservice can expose APIs such as REST, gRPC, Kafka consumer
+    - each API can have configurable number of endpoints such as routes and topics.
+2. API Invocation
+    - each endpoints on exposed API can have handlers that invoke endpoints on other microservices in configurable order or asynchronously.
+    - in addition to the exposed API types, handlers can also invoke DB endpoints such as Mongo collection and Redis cache.
+This configurability allows the developer/researcher to generate microservices benchmark with various network topology and communication patterns.
+
 
 {{% /blocks/section %}}
 
@@ -157,3 +181,6 @@ More specifically, I updated version of three tools running in the cluster, fixe
 [spegel]: https://github.com/XenitAB/spegel
 [cybozu-blog]: https://blog.cybozu.io/entry/2023/09/21/161930
 [DMM]: https://dmm-corp.com/
+[lab-cluster]: https://github.com/hanapedia/lab-cluster
+[lab-cluster-app]: https://github.com/hanapedia/lab-cluster-app
+[Hexagon]: https://github.com/hanapedia/hexagon
