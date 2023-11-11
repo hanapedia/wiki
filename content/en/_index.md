@@ -15,7 +15,7 @@ Please feel free to browse and share any feedback!
 <br>
 <br>
 
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/about/">
+<a class="btn btn-lg btn-primary me-3 mb-4" href="about/">
   About Me <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 

@@ -1,5 +1,6 @@
 baseURL = "/wiki/"
 title = "Hanapedia Wiki"
+relativeURLs = true
 
 # Language settings
 contentDir = "content/en"
