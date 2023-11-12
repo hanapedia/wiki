@@ -1,4 +1,4 @@
-baseURL = "/wiki"
+baseURL = "wiki"
 title = "Hanapedia Wiki"
 
 # Language settings
