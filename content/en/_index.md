@@ -27,7 +27,7 @@ Please feel free to browse and share any feedback!
 
 {{% blocks/lead color="light" %}}
 ## Recent Updates
-[Learning CNI]()
+[Kind Cluster Without CNI](./notes/Kubernetes/devenv/kind-without-cni)
 
 {.text-center}
 {{% /blocks/lead %}}
