@@ -32,53 +32,66 @@ Networking, Observability, Microservices
 
 {{% blocks/section color="primary" %}}
 # Software Engineering Background
-## 2019: Hello World, Hello Programming
-I encoutered programming in 2019 when I took programming course in college.
-Since then, I was entrigued by the cources in Inforamtion Science and continued to learn the basics of topics such as OS, Networking, Machine Learning/Deep Learning, Algorithm & Data Structure.
+1. [2023: Starting My Career as Software Engineer](#career)
+2. [2023: Starting My Master's](#masters)
+3. [2022: Diving Deeper](#more-webdev)
+4. [2021: Jumping into the world of Web](#first-webdev)
+5. [first-programming](#first-programming)
+
+## 2023: Starting My Career as Software Engineer <a name="career"></a>
+After completing my senior thesis, I started looking for software engineering job.
+
+### February 2023, Viviane
+First internship that I got was in a startup company named [Vivian][].
+I was employed as a fullstack developer working on frontend, backend, and infrastructure.
+
+### August 2023, Cybozu
+Another internship that I had was with [Cybozu][], which is a company that provides a BtoB SaaS.
+I was employed for three weeks course where I worked on improving the container registy in a large-scale Kubernetes cluster.
+More specifically, I've completed the following during the internship.
+- I tested an OSS container registry named [spegel][], a new type of container registry cache that is designed to share the local cache on each node.
+- I developed a kubernetes custom controller for delaying the pod scheduling to enhance the benefit of using spegel.
+
+The work that I've dones is documented as a [blog][cybozu-blog] in Japanese.
+
+### October 2023, DMM.com
+Another internship that I participated in was with [DMM.com][DMM]. I was employed for 5 weeks in a SRE team in Microservices Architect group.
+During the internship, I was assigned series of operational tasks for multi-cloud kubernetes cluster.
+More specifically, I updated version of three tools running in the cluster, fixed 4 different instances of error messages recorded by Datadog Agent, and added a new CI workflow for configuring IAM role in AWS.
+
+## 2023: Starting My Master's <a name="masters"></a>
+I started working on my master's research along side working my internships.
+
+I already had decided to continue on with my senior thesis in master's and dive further into analyzing how  different types of network communication affect the accuracy of the root cause analysis.
+For this, I had to improve the tools that I created during my senior thesis.
+
+### Multi-node Bare-metal Kubernetes cluster operation
+As for the Ansible project for provisioning bare-metal kubernetes cluster, I had to improve it so that I can create Kubernetes cluster on top of KVMs on multiple physical machines.
+This was a needed change because I noticed that I needed more computing power for my experiments.
+
+Also, because the cluster need to run continuously, I have improved the operation of the cluster. In particular, I introduced to GitOps to manage the installations of cluster tools such as monitoring infrastructure and service mesh.
+
+- [Improved Ansible][lab-cluster].
+- [The GitOps project][lab-cluster-app].
+
+### Hexagon
+As for the microservice topology configuration tool, I had to do a major rework so that I could incorporate some degree of application logic such as how each endpoint on a microservice will invoke endpoints on other microservices.
+
+Also, I had to improve the tooling so that I can have more variation for types of communication used by the microservices.
+
+With new requirements considered, I have developed [Hexagon][], a microservice benchmark generation tool which can configure the following on each microservice.
+1. Exposed API
+    - each microservice can expose APIs such as REST, gRPC, Kafka consumer
+    - each API can have configurable number of endpoints such as routes and topics.
+2. API Invocation
+    - each endpoints on exposed API can have handlers that invoke endpoints on other microservices in configurable order or asynchronously.
+    - in addition to the exposed API types, handlers can also invoke DB endpoints such as Mongo collection and Redis cache.
+This configurability allows the developer/researcher to generate microservices benchmark with various network topology and communication patterns.
 
 <br>
 <br>
 
-## 2021: Jumping into the world of Web
-Although I was enjoying academic programming used in college courses, I had always wondered where programming is used in the actual world. That was the starting point of my jouney in the web.
-
-<br>
-
-### August 2021, My First Major Project: [GlobeChat][]
-First, I started from Frontend and Backend development using Laravel and Vue.
-I developed a group chatting application called GlobeChat, which has 3D UI that visualize the engagement from the users in the chat room. 
-I also [presented][giikuten-slides] this application in a student pitch contest in Japan called Giikuten. 
-
-{{% imgproc globechat.gif Fill "640x360" %}}
-GlobeChat in Action.
-{{% /imgproc %}}
-
-The whole application was developed and deployed in the spand of *2 months*.
-##### **Tech Stack**
-Frontend: Vue, Three.js
-
-Backend: Laravel
-
-<br>
-
-### December 2021, My First Team Development: MShare
-As a team of four, we have developed Video Sharing Web Application that provides a unique rating system. User's facial expressions when watching the video are tallied directly to the rating of the video.
-{{% imgproc mshare Fill "640x640" %}}
-MShare in Action.
-{{% /imgproc %}}
-
-I worked on the integration of the facial expression detector on to the frontend and also the deployment of the backend to AWS services.
-
-The original application was developed in a week for a Hackason and was later refined.
-##### **Tech Stack**
-[Frontend][MShare-frontend]: Next.js, React
-
-[Backend][MShare-backend]: Next.js, AWS API Gateway, AWS Lambda
-
-<br>
-<br>
-
-## 2022: Diving Deeper
+## 2022: Diving Deeper <a name="more-webdev"></a>
 As I continued my jouney in the web development, I became more and more interested in lower layers of the web.
 At the same time, I was wondering how bigger applications are developed and ran in the real world.
 That was when I started look into concepts such as Kubernetes and Microservices.
@@ -117,57 +130,45 @@ However, this approach had limited scalability as I had to build the docker imag
 <br>
 <br>
 
-## 2023: Starting My Career as Software Engineer
-After completing my senior thesis, I started looking for software engineering job.
+## 2021: Jumping into the world of Web <a name="first-webdev"></a>
+Although I was enjoying academic programming used in college courses, I had always wondered where programming is used in the actual world. That was the starting point of my jouney in the web.
 
-### February 2023, Viviane
-First internship that I got was in a startup company named [Vivian][].
-I was employed as a fullstack developer working on frontend, backend, and infrastructure.
+<br>
 
-### August 2023, Cybozu
-Another internship that I had was with [Cybozu][], which is a company that provides a BtoB SaaS.
-I was employed for three weeks course where I worked on improving the container registy in a large-scale Kubernetes cluster.
-More specifically, I've completed the following during the internship.
-- I tested an OSS container registry named [spegel][], a new type of container registry cache that is designed to share the local cache on each node.
-- I developed a kubernetes custom controller for delaying the pod scheduling to enhance the benefit of using spegel.
+### August 2021, My First Major Project: [GlobeChat][]
+First, I started from Frontend and Backend development using Laravel and Vue.
+I developed a group chatting application called GlobeChat, which has 3D UI that visualize the engagement from the users in the chat room. 
+I also [presented][giikuten-slides] this application in a student pitch contest in Japan called Giikuten. 
 
-The work that I've dones is documented as a [blog][cybozu-blog] in Japanese.
+{{% imgproc globechat.gif Fill "640x360" %}}
+GlobeChat in Action.
+{{% /imgproc %}}
 
-### October 2023, DMM.com
-Another internship that I participated in was with [DMM.com][DMM]. I was employed for 5 weeks in a SRE team in Microservices Architect group.
-During the internship, I was assigned series of operational tasks for multi-cloud kubernetes cluster.
-More specifically, I updated version of three tools running in the cluster, fixed 4 different instances of error messages recorded by Datadog Agent, and added a new CI workflow for configuring IAM role in AWS.
+The whole application was developed and deployed in the spand of *2 months*.
+##### **Tech Stack**
+Frontend: Vue, Three.js
 
-## 2023: Starting My Master's
-I started working on my master's research along side working my internships.
+Backend: Laravel
 
-I already had decided to continue on with my senior thesis in master's and dive further into analyzing how  different types of network communication affect the accuracy of the root cause analysis.
-For this, I had to improve the tools that I created during my senior thesis.
+<br>
 
-### Multi-node Bare-metal Kubernetes cluster operation
-As for the Ansible project for provisioning bare-metal kubernetes cluster, I had to improve it so that I can create Kubernetes cluster on top of KVMs on multiple physical machines.
-This was a needed change because I noticed that I needed more computing power for my experiments.
+### December 2021, My First Team Development: MShare
+As a team of four, we have developed Video Sharing Web Application that provides a unique rating system. User's facial expressions when watching the video are tallied directly to the rating of the video.
+{{% imgproc mshare Fill "640x640" %}}
+MShare in Action.
+{{% /imgproc %}}
 
-Also, because the cluster need to run continuously, I have improved the operation of the cluster. In particular, I introduced to GitOps to manage the installations of cluster tools such as monitoring infrastructure and service mesh.
+I worked on the integration of the facial expression detector on to the frontend and also the deployment of the backend to AWS services.
 
-- [Improved Ansible][lab-cluster].
-- [The GitOps project][lab-cluster-app].
+The original application was developed in a week for a Hackason and was later refined.
+##### **Tech Stack**
+[Frontend][MShare-frontend]: Next.js, React
 
-### Hexagon
-As for the microservice topology configuration tool, I had to do a major rework so that I could incorporate some degree of application logic such as how each endpoint on a microservice will invoke endpoints on other microservices.
+[Backend][MShare-backend]: Next.js, AWS API Gateway, AWS Lambda
 
-Also, I had to improve the tooling so that I can have more variation for types of communication used by the microservices.
-
-With new requirements considered, I have developed [Hexagon][], a microservice benchmark generation tool which can configure the following on each microservice.
-1. Exposed API
-    - each microservice can expose APIs such as REST, gRPC, Kafka consumer
-    - each API can have configurable number of endpoints such as routes and topics.
-2. API Invocation
-    - each endpoints on exposed API can have handlers that invoke endpoints on other microservices in configurable order or asynchronously.
-    - in addition to the exposed API types, handlers can also invoke DB endpoints such as Mongo collection and Redis cache.
-This configurability allows the developer/researcher to generate microservices benchmark with various network topology and communication patterns.
-
-
+## 2019: Hello World, Hello Programming <a name="first-programming"></a>
+I encoutered programming in 2019 when I took programming course in college.
+Since then, I was entrigued by the cources in Inforamtion Science and continued to learn the basics of topics such as OS, Networking, Machine Learning/Deep Learning, Algorithm & Data Structure.
 {{% /blocks/section %}}
 
 [github-account]: https://github.com/hanapedia
