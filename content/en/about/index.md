@@ -30,13 +30,15 @@ Networking, Observability, Microservices
 {{% /blocks/section %}}
 
 
-{{% blocks/section color="primary" %}}
+{{% blocks/section color="light" %}}
 # Software Engineering Background
-1. [2023: Starting My Career as Software Engineer](#career)
-2. [2023: Starting My Master's](#masters)
-3. [2022: Diving Deeper](#more-webdev)
-4. [2021: Jumping into the world of Web](#first-webdev)
-5. [first-programming](#first-programming)
+### 1. [2023: Starting My Career as Software Engineer](#career)
+### 2. [2023: Starting My Master's](#masters)
+### 3. [2022: Diving Deeper](#more-webdev)
+### 4. [2021: Jumping into the world of Web](#first-webdev)
+### 5. [first-programming](#first-programming)
+
+<br>
 
 ## 2023: Starting My Career as Software Engineer <a name="career"></a>
 After completing my senior thesis, I started looking for software engineering job.
